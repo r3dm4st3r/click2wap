@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+    .col-label {
+        @apply block w-full mb-2 tracking-wider font-bold;
+    }
+    .form-control {
+        @apply block w-full outline-0 ring-0 border-2 border-gray-400 px-5 py-3 text-black shadow-2xl drop-shadow-lg focus:border-theme;
+    }
+    button:disabled {
+        @apply bg-gray-300 text-gray-600;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
